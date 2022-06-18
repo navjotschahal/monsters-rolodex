@@ -19,7 +19,6 @@ class App extends Component {
     .then(response => response.json())
     .then(
       (users) => {
-        console.log(users);
         this.setState({monsters: users && users.length ? users : []});
       }
     );
